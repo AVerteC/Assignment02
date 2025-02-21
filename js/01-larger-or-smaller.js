@@ -2,18 +2,12 @@ document.write("Comparing Two Integers:<br>");
 let a = prompt("Enter the first integer:");
 let b = prompt("Enter the second integer:");
 
- 
+// Check if the input is a number
 if ((isNaN(a) || isNaN(b))) {
     document.write("Please enter valid integers.<br>");
 }
 // According to JavaScript, 5.0 is an integer
 else if(Number.isInteger(parseFloat(a)) === false || Number.isInteger(parseFloat(b)) === false) {
-    document.write("Please enter valid integers.<br>");
-}
-// 10.000001 will become 10 when converted to an integer.
-// Don't allow 10.0000001 to be considered an integer.
-// floor(10.000001) !== 10.000000 
-else if (Math.floor(parseFloat(a)) !== parseFloat(a) || Math.floor(parseFloat(b)) !== parseFloat(b)) {
     document.write("Please enter valid integers.<br>");
 }
 else if (parseInt(a) > parseInt(b)) {
