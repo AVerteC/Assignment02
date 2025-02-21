@@ -1,8 +1,3 @@
-console.log("Is 10.000001 an integer? " + Number.isInteger(10.000001));
-console.log("Is 10.000000 an integer? " + Number.isInteger(10.0));
-console.log("Is 10.000001 equal to 10.000000? " + (10.000001 === 10.0));
-console.log("Does 10.000001 become 10 when converted to an integer? " + parseInt(10.000001));
-
 document.write("Comparing Two Integers:<br>");
 let a = prompt("Enter the first integer:");
 let b = prompt("Enter the second integer:");
@@ -17,17 +12,10 @@ else if(Number.isInteger(parseFloat(a)) === false || Number.isInteger(parseFloat
 }
 // 10.000001 will become 10 when converted to an integer.
 // Don't allow 10.0000001 to be considered an integer.
-// else if (parseFloat(a) % 1 !== 0 || parseFloat(b) % 1 !== 0) {
-//     document.write("Please enter valid integers.<br>");
-// }
+// floor(10.000001) !== 10.000000 
 else if (Math.floor(parseFloat(a)) !== parseFloat(a) || Math.floor(parseFloat(b)) !== parseFloat(b)) {
     document.write("Please enter valid integers.<br>");
 }
-// Check for decimal point in input
-// Is 5.0 considered an integer?
-// else if (a.includes(".") || b.includes(".")) {
-//     document.write("Please enter valid integers.<br>");
-// }
 else if (parseInt(a) > parseInt(b)) {
     document.write(`${a} is the largest integer that was entered.<br>`);
 }
