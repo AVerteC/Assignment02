@@ -14,9 +14,9 @@ else if (numScore >= 80 && numScore <= 89) {
     console.log("You received a B");
 }
 else if (numScore >= 90 && numScore <= 100) {
-    console.log("You received a A");
+    console.log("You received an A");
 }
 else {
-    console.log("You received a F");
+    console.log("You received an F");
 }
     
