@@ -1,7 +1,3 @@
-// Create an application that accepts two integers within two separate prompts. 
-// Then, display only the larger of the two within the browser window. 
-// Don’t forget to handle the fact that the two could be equal.
-
 document.write("Comparing Two Integers:<br>");
 let a = prompt("Enter the first integer:");
 let b = prompt("Enter the second integer:");

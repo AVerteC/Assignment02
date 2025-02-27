@@ -1,7 +1,7 @@
-let randomNumber = Math.round(Math.random());
-let coinFlip = randomNumber;
+let randomNum = Math.round(Math.random());
+// randomNum output is 1 or 0
+let coinFlip = randomNum;
 let choice = prompt("Enter 'Heads' or 'Tails':");
-let isTails = false;
 if (choice !== "Heads" && choice !== "Tails") {
     alert("Please enter 'Heads' or 'Tails'.");
 }

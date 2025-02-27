@@ -1,11 +1,8 @@
-let score = prompt("Enter your score from 0 to 100:");
-let numScore = parseInt(score);
+let score = prompt("Enter your score from 1 to 100:");
+let numScore = parseFloat(score);
 
-if (numScore < 1 || numScore > 100) {
+if (isNaN(numScore) || numScore < 1 || numScore > 100) {
     alert("Only numbers between 1 and 100 are accepted.");
-}
-else if (isNaN(numScore)) {
-    alert("Please enter a valid number.");
 }
 else if (numScore >= 60 && numScore <= 69) {
     console.log("You received a D");
